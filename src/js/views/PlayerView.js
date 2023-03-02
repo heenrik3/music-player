@@ -99,7 +99,7 @@ class PlayerView {
   setTrackInfo(song) {
     document.title = song.title + ' - ' + song.artist
 
-    this.setAlbumCover(song.cover ? song.cover : 'public/cd.png')
+    this.setAlbumCover(song.cover ? song.cover : 'cd.png')
     this.setSongName(song.title)
     this.setArtistName(song.artist)
     this.setProgressBarMax(song.duration)
