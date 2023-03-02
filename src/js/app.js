@@ -8,10 +8,6 @@ import Model from './Model.js'
 const filepicker = document.querySelector('.file')
 filepicker.addEventListener('change', handleAddFolder)
 
-function handleOnNavigation(where) {
-  console.log(where)
-}
-
 function handleAddFolder(e) {
   // Filter Only Accepted Audio Formats
   const files = Array.from(e.target.files).filter((file) =>

@@ -3,7 +3,7 @@ import View from './View.js'
 function playlistItem(data, index) {
   return `<div class="playlist__item" id=${index}>
     <picture class="playlist__pic">
-      <img src=${data.cover ? data.cover : 'public/cd.png'} />
+      <img src=${data.cover ? data.cover : 'cd.png'} />
     </picture>
     <div class="playlist__song">
     <span class="playlist__title">${
