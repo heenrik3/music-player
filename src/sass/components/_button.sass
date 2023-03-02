@@ -1,0 +1,30 @@
+.button
+    height: 3rem
+    width: 3rem
+    border: none
+    border-radius: 50%
+    background-color: transparent
+
+    display: flex
+    align-items: center
+    justify-content: center
+
+    font-size: 1.8rem
+
+    position: relative
+    
+    @include respond(tab-port)
+        height: 5rem
+        width: 5rem
+
+    &--play
+        @include box-shadow
+
+
+    &:disabled
+        opacity: .2
+        cursor: not-allowed
+
+    &:hover i
+        opacity: 1
+        // background-color: darken(white, 15%)
